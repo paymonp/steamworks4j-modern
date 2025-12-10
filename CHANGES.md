@@ -1,12 +1,13 @@
 ## change log
 
-### [1.10.0-SNAPSHOT]
+### [1.10.0]
 - Updated to Steamworks SDK v1.62.
 - Updated Maven modules to compile with Java 8.
 - All callback interfaces are now implemented using empty `default` methods. (#110)
 - Added `SteamAPI.initEx()`. It doesn't return the optional error description string yet, only the error return value.
 - Added `SteamUtils.dismissGamepadTextInput()`.
 - Added `SteamUtilsCallback.onFloatingGamepadTextInputDismissed()`. (#118)
+- Added `SteamUtils.isSteamInBigPictureMode()`, `isSteamChinaLauncher()`, `setGameLauncherMode()`. (#120)
 - Added `SteamUser.getAuthTicketForWebApi()`. (#126)
 - Added `SteamGameServer.setAdvertiseServerActive()` (#141)
 - MacOS: build fat dylib to support both x86_64 and arm64 architectures. (#107, #116)
